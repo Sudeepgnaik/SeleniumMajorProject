@@ -143,6 +143,10 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;Suite&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.utilities.CSVReporter&quot;/&gt;
+    &lt;listener class-name=&quot;com.utilities.ExcelListener&quot;/&gt;
+  &lt;/listeners&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Login&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.test.LoginTest&quot;/&gt;
@@ -189,7 +193,7 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testValidLogin')
 data.setCell(0, 2, 'com.test.LoginTest')
-data.setCell(0, 3, 164954);
+data.setCell(0, 3, 169769);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
@@ -227,11 +231,11 @@ return data;
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">testValidLogin</span>
-                <span class="method-start">3793 ms</span>
+                <span class="method-start">5996 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">168747 ms</span>
+                <span class="method-start">176339 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
